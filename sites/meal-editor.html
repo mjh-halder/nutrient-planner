@@ -1,0 +1,42 @@
+<section id="middle-section" class="container">
+
+    <!-- meal name sec-->
+    <div id="meal-name-sec">
+        <h3>Meal Name</h3>
+
+        <div class="row">
+            <div class="col col-md-8 col-xs-8 col-lg-offset-right-4">
+                <form>
+                    <input class="form-control">
+                </form>
+            </div>
+        </div>
+    </div> <!--end of meal name sec-->
+
+    <!-- ingridients sec -->
+    <div id="ingridient-sec">
+        <h3>Ingriedients</h3>
+
+        <div class="row" ng-repeat="ing in ctrl.ingridients">
+            <form>
+                <div class="form-group col-xs-4 col-md-4">
+                    <label class="sr-only" for="{{input-ingridient + ing.indexOf()}}">Ingridient</label> <!-- label hidden by class sr-only -->
+                    <input type="text" id="{{input-ingridient + ing.indexOf()}}" ng-model="ing.name"
+                           class="form-control"
+                           placeholder="Please enter ingridient...">
+                </div>
+                <div class="form-group col-xs-4 col-md-4">
+                    <label class="sr-only" for="{{input-amount + ing.indexOf()}}">Amount</label> <!-- label hidden by class sr-only -->
+                    <input type="text" id="{{input-amount + ing.indexOf()}}" ng-model="ing.name"
+                           class="form-control"
+                           placeholder="Please enter amount in grams...">
+                </div>
+
+            </form>
+        </div>
+
+        <form>
+            <button class="btn btn-default" ng-click="ctrl.addLine()">Add Ingridient</button>
+        </form>
+    </div> <!-- end of ingridients sec -->
+</section>

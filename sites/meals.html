@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Foodplanner</title>
+
+    <script type="text/javascript" src="../libs/1.5.0rc/angular.min.js"></script>
+
+
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/custom/bootstrap_expansion.css">
+    <link rel="stylesheet" href="../css/custom/custom.css">
+
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,100,300,400italic' rel='stylesheet'
+          type='text/css'>
+
+    <script type="text/javascript" src="../js/model/ModelModule.js"></script>
+    <script type="text/javascript" src="../js/MainModule.js"></script>
+    <script type="text/javascript" src="../js/controller/ControllerModule.js"></script>
+
+
+</head>
+<body>
+
+<script type="text/javascript" src="../js/main.js"></script>
+
+
+<div id="wrapper">
+
+
+    <div id="top-div">
+        <section id="top-section" class="container">
+            <div class="row">
+                <div class="col col-md-1">
+                    <img id="melone-logo" src="../res/img/logos/melone250.png" class="img-responsive">
+                </div>
+                <div class="col col-md-11">
+                    <div>
+                        <h1 id="site-headline-1">Foodplanner</h1>
+
+                        <h2 id="site-headline-2">Eat better - feel better. Today.</h2>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-dark bg-inverse">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="ingridients.html">Ingridients</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="meals.html">Meals <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Foodplan</a>
+                    </li>
+                </ul>
+                <form class="form-inline pull-xs-right">
+                    <button id="btn-sign-in" class="btn btn-primary">Login</button>
+                    <button class="btn btn-success" type="submit">Register</button>
+                </form>
+            </nav>
+
+
+        </section>
+    </div>
+
+
+    <div id="content-div" ng-controller="Controller">
+
+    <menu-editor></menu-editor>
+
+    </div>
+
+
+    <div id="bottom-div">
+        <section id="bottom-section" class="container">
+            <div>
+                <p>Impressum</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Spielwiese</title>
+    <script type="text/javascript" src="../libs/1.5.0rc/angular.min.js"></script>
+
+</head>
+
+<body>
+
+<script type="text/javascript" src="MainModule.js"></script>
+
+<h1>Spielwiese</h1>
+
+
+<div ng-controller="Controller as ctrl">
+    <div ng-repeat="g in ctrl.greetings">
+    <p>{{g.greeting + " " +  g.lng}}</p><button ng-click="ctrl.remove(g)">Remove</button>
+
+
+    </div>
+    Add new greeting: <input ng-model="ctrl.newValue"><button ng-click="ctrl.add(ctrl.newValue)">Hinzufügen</button>
+    <p>It is: {{ctrl.newValue}}</p>
+</div>
+
+</body>
+</html>

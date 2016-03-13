@@ -1,0 +1,154 @@
+/* Root Definitions */
+html, body {
+    height: 100%;
+    background-color: #E0E0E0;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #ffffff;
+    font-family :Roboto;
+}
+
+h2{
+    font-family :Roboto;
+    font-weight: 400;
+}
+
+p {
+    color: #BFC0C0;
+    font-family: Roboto;
+
+}
+
+h1 {
+    font-family :Roboto;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.img-center {margin:0 auto;}
+
+#wrapper {
+    min-height: 80%;
+    height: 80%;
+}
+
+/* Section Definitions */
+#top-div {
+    background-color: #373a3c;
+    padding-top: 20px;
+    /*padding-bottom: 10px;*/
+    overflow:auto;
+    /*box-shadow: 10px 10px;*/
+    /*background-blend-mode: soft-light;*/
+    /*height:20%;*/
+}
+
+#content-div {
+    padding-top: 1%;
+    min-height: 98%;
+    height:98%;
+    background-color: #cccccc;
+    background-color: #cccccc;
+    /*padding-bottom: 10px;*/
+}
+
+#bottom-div {
+
+    padding-top: 5px;
+    background-color: #100B00;
+    position: absolute;
+    width: 100%
+}
+
+#melone {
+    padding: 75px 20px 50px 20px;
+    opacity: 0.8;
+
+}
+
+#melone:hover {
+    opacity: 1.0;
+
+}
+
+#dumbbell {
+    padding: 75px 20px 50px 20px;
+    opacity: 0.8;
+
+
+}
+
+#dumbbell:hover {
+    opacity: 1.0;
+
+
+
+}
+
+#melone-logo {
+    height : 100px;
+}
+
+#site-headline-1, #site-headline-2 {
+    padding-left: 25px;
+}
+
+input {
+    border:0;
+    outline: none;
+}
+
+#plus-icon {
+    height:20px;
+
+}
+
+#add-icon {
+    width: 100px;
+    height: 100px;
+    background: black;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+#add-icon:after {
+    background: red;
+    content: "";
+    height: 20px;
+    left: -40px;
+    position: absolute;
+    top: 40px;
+    width: 100px;
+}
+
+
+
+#add-icon:after {
+    background: red;
+    height: 20px;
+    position: relative;
+    width: 20px;
+}
+
+#ingridient-sec {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+#meal-name-sec {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+#btn-sign-in {
+    background-color: #2b2d2f;
+    outline-color: #2b2d2f;
+    border-color: #2b2d2f;
+
+}
+
+
+
